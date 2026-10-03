@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-display: "Cinzel", "Cormorant Garamond", serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --color-gold-50: #fcf9f2;
+  --color-gold-100: #f7f0e0;
+  --color-gold-200: #eee0c0;
+  --color-gold-300: #e2cb99;
+  --color-gold-400: #d4b470;
+  --color-gold-500: #c5a059;
+  --color-gold-600: #a78140;
+  --color-gold-700: #866333;
+  --color-gold-800: #6c4f2d;
+  --color-gold-900: #573f27;
+
+  --color-charcoal-950: #08080a;
+  --color-charcoal-900: #0f0f13;
+  --color-charcoal-850: #15151b;
+  --color-charcoal-800: #1c1c24;
+  --color-charcoal-700: #292934;
+  --color-charcoal-600: #3b3b4a;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+body {
+  background-color: #09090b;
+  color: #e4e2dd;
+  overflow-x: hidden;
+}
+
+/* Luxurious typography defaults */
+h1, h2, h3, .font-serif-display {
+  font-family: var(--font-serif);
+}
+
+.font-brand {
+  font-family: var(--font-display);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0d10;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a35;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a059;
+}
+
+/* Cinematic film grain & vignette utilities */
+.cinematic-vignette {
+  background: radial-gradient(circle at center, transparent 40%, rgba(9, 9, 11, 0.75) 100%);
+}
+
+.gold-border-glow:hover {
+  border-color: rgba(197, 160, 89, 0.45);
+  box-shadow: 0 0 25px rgba(197, 160, 89, 0.12);
+}
